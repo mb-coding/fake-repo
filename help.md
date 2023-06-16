@@ -1,6 +1,6 @@
 # Contributing
 
-## Navigating the Repository
+## 1. Navigating the Repository
 
 First, open the [github repository](https://github.com/nerdherd/documentation) in a web browser.
 
@@ -97,6 +97,43 @@ To add a link directly, do:
 ```
 <https://website-name.com>
 ```
+### 5. Adding Images
+
+To add an image, first upload an image in the [`/source/images` directory](https://github.com/nerdherd/Documentation/tree/main/source/images).
+
+Then, to embed the image in a document, add:
+
+```md
+![Alternate Text](./images/IMAGE_NAME)
+
+*Add a caption here*
+```
+
+or
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+
+```
+
+*Add a caption here*
+
+:::
+
+You can change the image's size and other properties by doing:
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+:alt: ALTERNATE IMAGE TEXT
+:width: 200px
+:align: left
+```
+
+:::
+
+For more information, see the [MyST Parser](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#html-images) documentation.
 
 ## Saving Changes
 
@@ -115,6 +152,7 @@ Co-authored-by: Zach M <londonwafflez@users.noreply.github.com>
 ![Saving](./images/Contributing/GithubCommitting.png)
 
 After a few seconds, your changes will be built and displayed here on the [website](https://nerdherd.github.io/Documentation/).
+
 
 ## Adding New Pages
 
