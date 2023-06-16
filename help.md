@@ -10,6 +10,44 @@ To be invited, please contact a programming subteam member.
 
 Then, click on the [`source` folder](https://github.com/nerdherd/Documentation/tree/main/source) to see the markdown files for each page.
 
+### Adding Images
+
+To add an image, first upload an image in the [`/source/images` directory](https://github.com/nerdherd/Documentation/tree/main/source/images).
+
+Then, to embed the image in a document, add:
+
+```md
+![Alternate Text](./images/IMAGE_NAME)
+
+*Add a caption here*
+```
+
+or
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+
+```
+
+*Add a caption here*
+
+:::
+
+You can change the image's size and other properties by doing:
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+:alt: ALTERNATE IMAGE TEXT
+:width: 200px
+:align: left
+```
+
+:::
+
+For more information, see the [MyST Parser](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#html-images) documentation.
+
 ## Adding New Pages
 
 To add a new page, create a markdown file for it in the `source` [folder](https://github.com/nerdherd/Documentation/tree/main/source).
