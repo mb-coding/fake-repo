@@ -21,7 +21,7 @@ You can click on `Preview` to see a sample version of your document.
 
 For a full guide on markdown, see the [MyST Parser documentation](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html).
 
-### Headings
+### 1. Headings
 
 Pages should always start with an h1 heading, which is created with:
 ```md
@@ -37,7 +37,7 @@ Subheadings can be made by adding more hashes:
 
 Try to avoid skipping more than one heading level at a time.
 
-### Text formatting
+### 2. Text formatting
 
 To **bold** text, do:
 ```
@@ -57,7 +57,7 @@ To ***bold and italicize*** text, do:
 ***text to bold and italicize***
 ```
 
-### Code Blocks
+### 3. Code Blocks
 
 To format text as `monospace` (code, filenames, etc.) do: 
 :::
@@ -86,7 +86,7 @@ outputs
 System.out.println("Hello world!");
 ```
 
-### Adding links
+### 4. Adding links
 
 To add a link as text, follow this syntax:
 ```
