@@ -1,6 +1,6 @@
 # Contributing
 
-## Navigating the Repository
+## 1. Navigating the Repository
 
 First, open the [github repository](https://github.com/nerdherd/documentation) in a web browser.
 
@@ -10,7 +10,7 @@ To be invited, please contact a programming subteam member.
 
 Then, click on the [`source` folder](https://github.com/nerdherd/Documentation/tree/main/source) to see the markdown files for each page.
 
-### Adding Images
+### 5. Adding Images
 
 To add an image, first upload an image in the [`/source/images` directory](https://github.com/nerdherd/Documentation/tree/main/source/images).
 
