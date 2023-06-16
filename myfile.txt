@@ -1,0 +1,8 @@
+This is an example of a file in a git repository.
+a
+b
+c
+d
+e
+f
+g
