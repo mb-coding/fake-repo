@@ -1,6 +1,9 @@
 This is an example of a file in a git repository.
 a
 b
+1
+2
+3
 c
 d
 e
