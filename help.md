@@ -1,6 +1,6 @@
 # Contributing
 
-## Navigating the Repository
+## 1. Navigating the Repository
 
 First, open the [github repository](https://github.com/nerdherd/documentation) in a web browser.
 
@@ -9,6 +9,150 @@ in order to edit the repository.
 To be invited, please contact a programming subteam member.
 
 Then, click on the [`source` folder](https://github.com/nerdherd/Documentation/tree/main/source) to see the markdown files for each page.
+
+## Editing pages
+
+To edit a page, find its corresponding markdown (.md) file 
+and click on the edit button to start editing.
+
+You can click on `Preview` to see a sample version of your document.
+
+## Basic Syntax
+
+For a full guide on markdown, see the [MyST Parser documentation](https://myst-parser.readthedocs.io/en/latest/syntax/syntax.html).
+
+### 1. Headings
+
+Pages should always start with an h1 heading, which is created with:
+```md
+# Heading name
+```
+
+Subheadings can be made by adding more hashes:
+```md
+## Subheading name
+### Smaller subheading name
+#### Even smaller subheading name
+```
+
+Try to avoid skipping more than one heading level at a time.
+
+### 2. Text formatting
+
+To **bold** text, do:
+```
+**text to bold**
+```
+
+To *italicize* text, do:
+```
+*text to italicize*
+``` 
+
+Please italicize image captions.
+
+To ***bold and italicize*** text, do:
+
+```
+***text to bold and italicize***
+```
+
+### 3. Code Blocks
+
+To format text as `monospace` (code, filenames, etc.) do: 
+:::
+`code text`
+:::
+
+To format an entire section as code, do:
+:::
+```language name
+```
+:::
+
+If you want the code to be highlighted, replace `language name` with the language name.
+
+For example, this code block
+
+:::
+```java
+System.out.println("Hello world!");
+```
+:::
+
+outputs
+
+```java
+System.out.println("Hello world!");
+```
+
+### 4. Adding links
+
+To add a link as text, follow this syntax:
+```
+[Link text](https://website-name.com)
+```
+
+To add a link directly, do:
+```
+<https://website-name.com>
+```
+### 5. Adding Images
+
+To add an image, first upload an image in the [`/source/images` directory](https://github.com/nerdherd/Documentation/tree/main/source/images).
+
+Then, to embed the image in a document, add:
+
+```md
+![Alternate Text](./images/IMAGE_NAME)
+
+*Add a caption here*
+```
+
+or
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+
+```
+
+*Add a caption here*
+
+:::
+
+You can change the image's size and other properties by doing:
+
+:::md
+
+```{image} ./images/IMAGE_NAME
+:alt: ALTERNATE IMAGE TEXT
+:width: 200px
+:align: left
+```
+
+:::
+
+For more information, see the [MyST Parser](https://myst-parser.readthedocs.io/en/latest/syntax/optional.html#html-images) documentation.
+
+## Saving Changes
+
+To save your changes, scroll to the bottom of the editor, write notes, and press "Commit changes."
+
+If someone worked on the page with you, add them as a co-author by adding to the commit message:
+```
+Co-authored-by: AUTHORNAME <USERNAME@users.noreply.github.com>
+```
+
+For example, to add [Zachary Miller](https://github.com/londonwafflez) as a co-author, add:
+```
+Co-authored-by: Zach M <londonwafflez@users.noreply.github.com>
+```
+
+![Saving](./images/Contributing/GithubCommitting.png)
+
+After a few seconds, your changes will be built and displayed here on the [website](https://nerdherd.github.io/Documentation/).
+
 
 ## Adding New Pages
 
